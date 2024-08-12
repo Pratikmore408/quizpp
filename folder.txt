@@ -1,0 +1,25 @@
+/backend
+│
+├── /config
+│   └── db.js (Database connection setup)
+│
+├── /controllers
+│   ├── quizController.js (Controller for handling quiz-related logic)
+│   └── tagController.js (Controller for handling tag-related logic)
+│
+├── /models
+│   ├── Question.js (Schema for quiz questions)
+│   └── Tag.js (Schema for tags)
+│
+├── /routes
+│   ├── quizRoutes.js (Routes for quiz-related API endpoints)
+│   └── tagRoutes.js (Routes for tag-related API endpoints)
+│
+├── /middleware
+│   └── errorHandler.js (Error handling middleware)
+│
+├── /utils
+│   └── dataLoader.js (Utility to load the questions and tags from JSON)
+│
+├── server.js (Entry point for the backend server)
+└── package.json (Backend dependencies and scripts)
