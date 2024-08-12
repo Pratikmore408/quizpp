@@ -5,6 +5,7 @@ import connectDB from "./config/db.js";
 import quizRoutes from "./routes/quizRoutes.js";
 import tagRoutes from "./routes/tagRoutes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
+import { loadData } from "./utils/dataLoader.js";
 
 dotenv.config();
 const app = express();
@@ -20,4 +21,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   connectDB();
+  loadData();
 });
